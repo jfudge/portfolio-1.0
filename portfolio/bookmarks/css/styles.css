@@ -1,0 +1,237 @@
+/* 
+Name: Jamie Fudge
+Date of Submission: Sunday December 01, 2013
+Assignment: Book Marking App 
+*/ 
+
+/* CSS Document */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
+/* eric meyer css reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* eric meyer css reset ends */
+
+
+
+body
+{
+	/*background: #e0e0e0;*/
+	background: url(../images/background.jpg) repeat;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 14px;
+	margin: 0 auto;
+}
+
+h1
+{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	margin: 0 auto;
+	text-align: center;
+	color: #ff6766;
+	padding: 15px;
+}
+
+#links-container
+{
+	margin: 0 auto;
+	width: auto;
+	height: auto;	
+	padding: 10px;
+	
+}
+.links
+{
+	width: 635px;
+	height: auto;
+	border: solid 1px black;
+	margin: 0 auto;
+	background:url(../images/background2.jpg) repeat;
+	padding-bottom: 55px
+}
+
+li
+{
+	text-decoration: none;
+	list-style: none;	
+	padding: 10px;
+	width: 85%;
+	margin: 0 auto;
+	
+}
+
+.title
+{
+	text-decoration: none;
+	list-style: none;	
+	
+	font-size: 15px;
+	color: #a8a8a8;
+}
+
+.url a
+{
+	color: #6bcbca;
+	font-weight: 300;
+}
+
+a
+{
+	color: #ff6766;
+	text-decoration: none;
+}
+
+.container-login
+{
+	margin: 0 auto;
+	width: 970px;
+	height: 700px;
+	background: #e0e0e0;	
+}
+
+.container-bookmarks
+{
+	margin: 0 auto;
+	width: 970px;
+	height: 700px;
+	background: #e0e0e0;	
+}
+
+article
+{
+	margin: 0 auto;
+	width: 970px;
+	height: 400px;
+}
+
+form.login
+{
+	width: 620px;
+	height: 400px;
+	margin: 0 auto;
+	padding: 10px;
+	background: #272125;
+}
+
+form.bookmarks
+{
+	width: 620px;
+	height: 250px;
+	margin: 0 auto;
+	padding: 10px;
+	background: #459f86;
+	
+}
+
+form ol
+{
+	list-style: none;
+}
+
+form ol li
+{
+	margin-bottom: 20px;
+	list-style: none;
+	
+}
+
+form li
+{
+	list-style: none;
+}
+
+label
+{
+	display: block;
+	font-weight: bold;
+	color: #857a82;	
+}
+
+input, textarea
+{
+	width: 500px;	
+	height: 30px;
+	/*border: solid 1px black;*/
+	background: white;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+textarea
+{
+	-webkit-border-radius: 3px;    
+    border-radius: 3px;
+	
+
+}
+
+input[type=submit]
+{
+	height: 35px;
+	margin: 0 auto;
+	/*border: solid 1px black;*/
+	background: #eb4141;
+	padding: 5px 10px;
+	color: #C6C2C4;	
+	font-weight: bold;
+	border: none;
+	/*font-weight: bold;*/
+	
+	-webkit-border-radius: 2px;    
+    border-radius: 2px;
+	
+	-webkit-box-shadow:  0px 3px 0px 3px #c64444;       
+    box-shadow:  0px 3px 0px 3px #c64444;
+
+}
+.submit
+{
+	
+	
+	font-family: 'Oswald', sans-serif;
+	font-size: 16px;
+}
+
+.sign-out
+{
+	width: 50px;
+	
+	background: #4fc5ad;
+	text-decoration: none;
+	padding: 7px;
+	float: right;
+	margin-right: 100px;
+	color: #363636;
+	font-size: 12px;
+	font-weight: bold;
+	
+	-webkit-border-radius: 2px;    
+    border-radius: 2px;
+	
+	-webkit-box-shadow:  0px 2px 0px 1px #3a8974;       
+    box-shadow:  0px 2px 0px 1px #3a8974;
+}
+
+::-webkit-input-placeholder {
+   padding-left: 5px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   padding-left: 5px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	padding-left: 5px;
+}
+
+:-ms-input-placeholder {  
+	padding-left: 5px;
+}
+
+.grey
+{
+	color: #C6C2C4;
+}

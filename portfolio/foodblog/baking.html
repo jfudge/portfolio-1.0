@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Blog</title>
+<link rel="stylesheet" type="text/css" href="css/style-min.css">
+<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+<!--SLICK NAV JQUERY-->
+<!--FLEXSLIDER-->
+
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+
+</head>
+
+<body>
+<!-- FlexSlider -->
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "fade",
+		easing: "swing", 
+		slideshow: "true", 
+		randomize: "true",
+		slideshowSpeed: 5500,
+		animationLoop: true,		
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+<div id="container">
+
+	<div id="header">
+    <h1>Foodie Bite</h1>    
+    </div>
+    	
+        <nav class="nav-wrapper">
+    	<nav id="nav">
+        <ul>
+        	<li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="baking.html">Baking</a></li>
+            <li><a href="restaurants.html">Restaurants</a></li>          
+        </ul>
+        </nav><!--end of nav-->
+        </nav><!--end of nav-wrapper-->
+        
+        <div class="clear">
+        </div>
+        
+        	<section id="section1">
+            
+            <div class="slider-wrapper-baking">
+            
+            <div class="slider-baking">
+              <div class="flexslider">
+          		<ul class="slides">
+                    <li>
+                    <a href="#"><img src="images/baking-slider1.jpg" alt="baking" /></a>
+                    <p class="flex-caption">28 Cheesecakes Recipes You'd Give Anything For.</p>
+                    </li>
+                    <li>
+                    <a href="#"><img src="images/baking-slider2.jpg" alt="baking" /></a>
+                    <p class="flex-caption">Homemade Blueberry Muffin Recipe.</p>
+                    </li>
+                    <li>
+                    <a href="#"><img src="images/baking-slider3.jpg" alt="baking" /></a>
+                    <p class="flex-caption">The Best Chocolate Chip Cookie Ever.</p>
+                    </li>
+                    <li>
+                    <a href="#"><img src="images/baking-slider4.jpg" alt="baking" /></a>
+                    <p class="flex-caption">Classic Cherry Pie Recipe.</p>
+                    </li>
+                </ul>
+       		  </div><!--end of flexslider-->
+            
+            </div><!--end of slider-->    
+            
+            </div><!--end of slider wrapper-->
+            
+            <div class="clear"></div>
+            
+            </section><!--end of section1-->            	
+                
+                	<section id="section3">
+                    <h3>Popular Recipes</h3>
+                    	
+                        <div class="recipe-wrapper">
+                    	<div class="breakfast">
+                        <h2>Breakfast</h2>
+                        <img class="recipe-img" src="images/breakfast.png" alt="breakfast"/>
+                        </div>
+                        
+                        <div class="lunch">
+                        <h2>Lunch</h2>
+                        <img class="recipe-img" src="images/lunch.png" alt="lunch"/>
+                        </div>
+                        
+                        <div class="dinner">
+                        <h2>Dinner</h2>
+                        <img class="recipe-img" src="images/dinner.png" alt="dinner"/>
+                        </div>
+                        
+                        <div class="dessert">
+                        <h2>Dessert</h2>
+                        <img class="recipe-img" src="images/dessert.png" alt="dessert"/>
+                        </div>
+                        </div>
+                        
+                        <div class="clear"></div>
+                    
+                    </section><!--end of section3-->
+                    
+                    	<section id="section4">
+                        <div class="page-container">
+                        
+                        <div class="post1-recipe">
+                        
+                        <div class="post-img7">
+                        </div><!--end of post-img-->
+                                               
+                        <div class="post-text-recipe">
+                        <h4>Chocolate Cake Recipe</h4>
+                        <p class="date">November 13, 2013</p>
+                        <p>An easy to make chocolat cake recipe.</p>                        
+                        </div><!--end of post-text-->
+                        
+                        <div class="read-more">
+                        <a href="#"><h5>READ MORE</h5></a>
+                        </div>    
+                                     
+                        </div><!--end of post1-->
+                        
+                        <div class="sidebar-wrapper">
+                        
+                        <div class="sidebar1">
+                        <h6>Most Popular</h6>
+                        
+                        <div class="underline"></div>
+                        
+                        <img class="pop-img" src="images/turkey.jpg" alt="turkey">
+                        <p class="side-text">                        
+                        <a href="#">Thanksgiving Dinner Mistakes</a></p> 
+                                                                        
+                        <img class="pop-img" src="images/grilled-cheese.jpg" alt="cheese">
+                        <p class="side-text">
+                        <a href="#">THE BEST GRILLED CHEESE SANDWICH</a></p>
+                                                                       
+                        <img class="pop-img" src="images/cake.jpg" alt="cake">
+                        <p class="side-text">
+                        <a href="#">Vegan Dessert Guide</a></p>
+                                                
+                        <img class="pop-img" src="images/bar.jpg" alt="bar">
+                        <p class="side-text">
+                        <a href="#">TOP BARS IN CHICAGO</a></p>                                     
+                        </div>
+                        
+                        <div class="sidebar2">
+                        <a href="#"><img src="images/restaurant.jpg" alt="restaurant"></a>
+                        <a href="#"><img src="images/weird.jpg" alt="weird"></a>
+                        <a href="#"><img src="images/pie.jpg" alt="pie"></a>
+                        <a href="#"><img src="images/eggs.jpg" alt="eggs"></a>                        
+                        </div>
+                        
+                        <div class="sidebar3">
+                        <p class="side-text2">
+                        <a href="#">Easy Appetizers</a></p>
+                        
+                        <p class="side-text2"><a href="#">Serving Apps</a></p>
+                        <a href="#">
+                        
+                        <img src="images/bread.jpg" alt="bread"></a>                      
+                        
+                        <a href="#"><img src="images/snack.jpg" alt="snack"></a>                     
+                        </div>
+                        
+                        </div><!--end of sidebar wrapper-->
+                        
+                        <div class="post2-recipe">
+                        
+                        <div class="post-img8">
+                        
+                        </div><!--end of post-img-->
+                        
+                        <div class="post-text-recipe">
+                        <h4>Chocolate Chip Muffins</h4>
+                        <p class="date">November 10, 2013</p>
+                        <p>How to make delicious chocolate chip muffins.</p>
+                        </div><!--end of post-text-->
+                        
+                        <div class="read-more">
+                        <a href="#"><h5>READ MORE</h5></a>
+                        </div>  
+                        
+                        </div><!--end of post2-->
+                        
+                        <div class="post3-recipe">
+                        
+                        <div class="post-img">
+                        
+                        </div><!--end of post-img-->
+                        
+                        <div class="post-text-recipe">
+                        <h4>Classic Cherry Pie Recipe</h4>
+                        <p class="date">November 9, 2013</p>
+                        <p>A simple a easy cherry pie recipe. This is a easy to follow recipe made with fresh cherries. Everyone will love this recipe!</p>
+                        </div><!--end of post-text-->
+                        
+                        <div class="read-more">
+                        <a href="#"><h5>READ MORE</h5></a>
+                        </div>  
+                        
+                        </div><!--end of post3-->
+                        
+                        </div><!--end of page-container-->
+                        
+                        <div class="clear"></div>
+                        
+                        </section><!--end of section4-->
+                        	
+                            <footer id="footer">
+
+                                <footer id="footer">
+
+                                <section id="section5">
+                        
+                                    <div id="footer-container">
+                                    
+                                        <div class="footer-box1">  
+                                        
+                                        <h4 class="footer">Site Map</h4>
+                                        <ul>
+                                            <li><a href="about.html">News</a></li>
+                                            <li><a href="menu.html">Recipes</a></li>
+                                            <li><a href="specials.html">Baking</a></li>
+                                            <li><a href="gallery.html">Resaurants</a></li>
+                                            <li><a href="#">Contact</a></li>
+                                        </ul>
+                                                                                             
+                                        </div>
+                                        
+                                        <div class="footer-box2">
+                                        
+                                        <h4 class="footer">Contact Info</h4>                             
+                                        
+                                        <ul>
+                                            <li>Email:</li>
+                                            <li><a href="#">foodie@gmail.com</a></li>
+                                            <li>Phone:</li>
+                                            <li class="phone"><a href="#">905-456-1122</a></li>
+                                            <li>33 Hezelnut Crescent</li>
+                                            <li>Toronto, Ontario</li>
+                                            <li>Canada</li>
+                                            <li>OX5 1EH</li>
+                                        </ul>                            
+                                                              
+                                        </div>
+                                        
+                                        <div class="footer-box3">   
+                                        
+                                            <h4 class="footer">Please contact us:</h4>
+                                            <ul>
+                                                <li>Enquire about:</li>
+                                                <li>Catering</li>
+                                                <li>Reviews</li>
+                                                <li>Discounts</li>
+                                                <li>Locations</li>
+                                                <li>Recipes</li>
+                                                <li>Baking</li>
+                                                <li>Resaurants</li>
+                                             </ul>               
+                                         </div> 
+                                         
+                                         </div>   <!--end of footer-container-->                                                  
+                        
+                        </section><!--end of section4-->
+
+                                
+                            </footer>
+
+</div>
+
+</body>
+</html>

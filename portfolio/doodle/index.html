@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+    <head>
+    
+        <meta charset="UTF-8">
+        <title>Google Doodle Assignment</title>        
+        <link rel="stylesheet" type="text/css" href="css/styleV2.css" >
+        <script src="js/doodle.js"></script>
+        <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--Snow effect-->
+       	<!-- The snow.css file -->
+		<link rel="stylesheet" href="css/snow.css" type="text/css" media="screen">
+		<!-- The snow.js file -->
+		<script src="js/snow.js" type="text/javascript"></script>
+		<link href='http://fonts.googleapis.com/css?family=Niconne' rel='stylesheet' type='text/css'>
+
+		    
+    </head>
+    
+    <body>
+    	<div class="container">
+        
+        <section id="canv">
+		
+        <div id="snowwrapper">
+
+	        <div id="snowContainer">
+	        	<canvas id="canvas" width="600"  height="200">	
+                You browser does not support HTML5 Canvas. Please upgrade your browser.
+                
+           		</canvas>
+	        </div>
+
+        </div>
+
+            
+            
+            <noscript>Please turn on JavaScript in your browser</noscript>
+        </section>
+        
+        <section id="google-input">
+            <form>
+                <input type="text" />        
+            </form>
+            
+            <h1>Google Canada</h1>
+        </section>
+    
+    	</div>
+        
+        
+		<script>
+		//source: http://jsfiddle.net/bDQ6b/2/
+				window.addEventListener('load', function () {
+				  var
+					img = new Image,
+					ctx = document.getElementById('canvas').getContext('2d');
+				  
+				  img.src = 'images/blimp.png';
+				  img.addEventListener('load', function () {
+				
+					var interval = setInterval(function() {
+					  var x = 0, y = 0;
+					  
+					  return function () {
+						ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+						ctx.drawImage(img, x, y);
+				
+						x += 1;
+						if (x > ctx.canvas.width) {
+						  x = 0;
+						}
+					  };
+					}(), 2000/40);
+				  }, false);
+				}, false);
+				
+				
+</script>
+
+	
+    
+    </body>
+</html>

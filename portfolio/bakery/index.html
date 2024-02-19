@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/fluid.css" />
+        <link rel="stylesheet" href="css/copyright.css" />
+        <!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<![endif]-->          
+       
+        <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+        <!-- Modernizr -->
+        <script src="js/modernizr.js"></script>
+                
+        <!-- jQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+          
+        <!-- FlexSlider -->
+        <script defer src="js/jquery.flexslider.js"></script>   
+
+        <script type="text/javascript">
+			$(function(){
+			  SyntaxHighlighter.all();
+			});
+			$(window).load(function(){
+			  $('.flexslider').flexslider({
+				animation: "slide",
+				animation: "fade", 
+				easing: "swing", 
+				controlsContainer: ".flex-container",
+				start: function(slider){
+				  $('body').removeClass('loading');
+				}
+			  });
+			});
+			</script>
+		    
+		    <script type="text/javascript">
+				$("mobile").click(function () {
+			$("mobile-nav").toggle();
+			});
+	    </script>      
+           
+        </head>
+        
+	<body>
+    
+    	<div id="header">
+		
+		<div class="top"> 
+		<span></span>       
+		</div>    
+        
+        <div id="social">            
+			<a href="#" ><img class="facebook" src="images/facebook.png" alt="facebook"/></a>
+			<a href="#" ><img class="twitter" src="images/twitter.png" alt="twitter"/></a>
+			<a href="#" ><img class="pinterest" src="images/pinterest.png" alt="pinterest"/></a>
+			<a href="#" ><img class="rss" src="images/rss-feeds.png" alt="rss" /></a>            
+		</div>  
+		
+			<nav id="main-nav">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="specials.html">Specials</a></li>
+			<li><a href="gallery.html">Gallery</a></li>    
+			<li><a href="contact.php">Contact</a></li>
+		</ul>        
+			</nav>
+			
+			 <div class="logo">
+			 <span></span>
+			 </div>
+			 
+			 <div class="logo2">
+			 <span></span>
+			 </div>	           
+             
+             <div class="mobile-wrapper">
+             	<nav id="mobile-nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="specials.html">Specials</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.php">Contact</a></li>
+					</ul>
+				</nav>  
+             </div>      
+     
+		</div>  <!--end of header-->
+        
+        	<div id="content">
+			
+			<section id="intro">
+			
+				 <h1>Toronto's Finest Bakery.</h1>
+				 
+				 <div class="slider">
+				 </div><!--end of slider-->
+				 
+				 <div id="slider">
+				 
+						<div class="flexslider">
+							  <ul class="slides">
+								<li>
+									<img src="images/cupcakes.jpg" alt="cupcakes" />
+									</li>                                   
+									<li>
+									<img src="images/donuts.jpg" alt="donuts" />
+									</li>
+									<li>
+									<img src="images/cupcakes2.jpg" alt="cupcakes" />
+									</li>
+									<li>
+									<img src="images/wedding-cakes.jpg" alt="wedding cakes" />
+									</li>
+									<li>
+									<img src="images/tart.jpg" alt="tarts" />
+									</li>
+									<li>
+									<img src="images/cupcakes7.jpg" alt="cupcake" />
+									</li>
+									<li>
+									<img src="images/cupcakes3.jpg" alt="cupcakes" />
+									</li>
+									<li>
+									<img src="images/cupcakes4.jpg" alt="cupcakes" />
+									</li>
+									<li>
+									<img src="images/cupcakes6.jpg" alt="cupcakes" />
+									</li>
+									<li>
+									<img src="images/cupcakes5.jpg" alt="cupcakes" />
+									</li>			   
+							  </ul>
+							</div>   <!--end of flexslider-->              
+				 </div><!--end of slider-->                
+			
+			</section>
+            
+            	<section id="section2">
+					
+					<div id="box-container">
+				
+						<div class="box1">						
+						<p>We'll add a shine to your day with our <em>friendly service</em> and bring a smile
+						to your face with each and every <em>delicious bite.</em></p>					
+						</div>					
+						
+						<div class="box2">					
+							<h2>Menu</h2> 					
+						</div>
+                        					
+						<div class="box3">				   
+						<a href="specials.html"><h2>Specials</h2></a>				
+						</div>
+						
+					</div><!--end of box-container -->
+				
+				</section>
+                
+                	<section id="section3">
+							  
+					 <div id="about-images">
+					 <img src="images/about3.jpg" alt="cupcake"/>
+					 <img src="images/about4.jpg" alt="cupcake"/>
+					 <img src="images/about2.jpg" alt="cupcake"/>
+					 </div>          
+												 
+					</section> <!--end of section3 -->                  
+                    
+                    	<section id="section4">
+						
+						<div id="footer-container">
+						
+							<div class="footer-box1">  
+							
+							<h3>Site Map</h3>
+							<ul>
+								<li><a href="about.html">About</a></li>
+								<li><a href="menu.html">Menu</a></li>
+								<li><a href="specials.html">Specials</a></li>
+								<li><a href="gallery.html">Gallery</a></li>
+								<li><a href="contact.php">Contact</a></li>
+							</ul>
+																				 
+							</div>
+							
+							<div class="footer-box2">
+							
+							<h3>Contact Info</h3>                             
+							
+							<ul>
+								<li>Email:</li>
+								<li><a href="#">bakery@gmail.com</a></li>
+								<li>Phone:</li>
+								<li class="phone"><a href="#">905-456-1122</a></li>
+								<li>33 Hezelnut Crescent</li>
+								<li>Toronto, Ontario</li>
+								<li>Canada</li>
+								<li>OX5 1EH</li>
+							</ul>                            
+												  
+							</div>
+							
+							<div class="footer-box3">   
+							
+								<h3>Please contact us today.</h3>
+								<ul>
+									<li>Enquire about:</li>
+									<li>Wedding Cakes</li>
+									<li>Glutten Free Cakes</li>
+									<li>Birthday Cakes</li>
+									<li>Gourmet Cupcakes</li>
+									<li>Cake Pops</li>
+									<li>Engagement Cakes</li>
+									<li>Baby Shower Cakes</li>
+								 </ul>               
+							 </div>	
+                             
+                             </div>   <!--end of footer-container--> 										
+						                       
+							  <div id="main-footer"> 
+									 <div id="social-footer">            
+										<a href="#" ><img class="facebook" src="images/facebook.png" alt="facebook"/></a>
+										<a href="#" ><img class="twitter" src="images/twitter.png" alt="twitter"/></a>
+										<a href="#" ><img class="pinterest" src="images/pinterest.png" alt="pinterest"/></a>
+										<a href="#" ><img class="rss" src="images/rss-feeds.png" alt="rss" /></a>            
+									 </div>                             
+									<p>&copy; Sweet Delights  2013</p>         
+								
+								</div> <!--end of main-footer-->
+							  
+							                      
+						
+						</section><!--end of section4-->
+            </div>         <!--end of content -->
+            
+	</body>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>SC/PR</title>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen">
+<script type="text/javascript" charset="utf-8">
+<!--
+var timeout         = 500;
+var closetimer		= 0;
+var ddmenuitem      = 0;
+
+// open hidden layer
+function mopen(id)
+{	
+	// cancel close timer
+	mcancelclosetime();
+
+	// close old layer
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	// get new layer and show it
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+}
+// close showed layer
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+
+// go close timer
+function mclosetime()
+{
+	closetimer = window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
+
+// close layer when click-out
+document.onclick = mclose; 
+</script>
+<!-- slider -->
+<link rel="stylesheet" href="css/flexslider.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+
+</head>
+
+<!-- fonts -->
+<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+<!-- twitter feed -->
+
+
+
+
+<body>
+<div id="home_container">
+	<div id="header">
+    	
+        
+        <div id="home_top">
+        <div id="logo"><a href="index.html"><img src="images/SC-PR_logo.png" alt="" title="" border="0"></a></div>
+        
+        <div id="social-icons">        
+        <a href="http://pinterest.com/worldofscpr/" target="_blank">
+        <img src="images/pinterest.jpg" alt="" style="float: right; 
+        padding: 3px;"/></a>        
+        
+        <a href="http://instagram.com/scpr" target="_blank">
+        <img src="images/instagram.jpg" alt="" style="float: right; padding: 3px;"/>
+        </a>
+        
+        <a href="https://www.youtube.com" target="_blank">
+        <img src="images/youtube.jpg" alt="" style="float: right; padding: 3px;"/>
+        </a>
+        
+        <a href="http://www.linkedin.com/company/sc-pr" target="_blank">
+        <img src="images/linkedin.jpg" alt="" style="float:right; padding: 3px;"/>
+        </a>
+        
+        <a href="https://twitter.com/sc_pr" target="_blank"> 
+        <img src="images/twitter.jpg" alt="" style="float: right; padding: 3px;"/>
+        </a>
+        
+        <a href="https://www.facebook.com/helloscpr" target="_blank">
+        <img src="images/facebook.jpg" alt="" style="float: right; padding: 3px;"/>  
+        </a>      
+        </div>
+        
+        </div>
+        
+
+        
+<div id="menu">
+    
+  <ul id="sddm">
+	<li><a href="index2.php" onmouseover="mopen('m1')" onmouseout="mclosetime()">Home</a>
+		<div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+<!--		<a href="#">HTML DropDown</a>
+		<a href="#">DHTML DropDown menu</a>
+		<a href="#">JavaScript DropDown</a>
+		<a href="#">DropDown Menu</a>
+		<a href="#">CSS DropDown</a>-->
+		</div>
+	</li>
+	<li><a href="director.php" onmouseover="mopen('m2')" onmouseout="mclosetime()">Director</a>
+		<div id="m2" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+		<!--<a class="tab" href="partners.php">PARTNERS</a>-->
+		<!--<a href="#">Pulldown menu</a>
+		<a href="#">AJAX dropdown</a>
+		<a href="#">DIV dropdown</a>-->
+		</div>
+	</li>
+	<li><a href="press/highlights.php" onmouseover="mopen('m3')" onmouseout="mclosetime()">Press</a>
+		<div id="m3" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+		<!--<a class="tab" href="#">HIGHLIGHTS</a>
+		<a class="tab" href="#">EVENTS</a>
+        <a class="tab" href="#">VIDEOS</a>
+        <a class="tab" href="#">CLIENT GALLERIES</a>
+        <a class="tab" href="#">PRESS RELEASES</a>-->
+		</div>
+	</li>
+	<li><a href="clients/publicrelations.php" onmouseover="mopen('m4')" onmouseout="mclosetime()">Clients</a>
+		<div id="m4" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+		<!--<a class="tab" href="clients/publicrelations.php">PUBLIC RELATIONS</a>
+		<a class="tab" href="clients/testimonials.php">TESTIMONIALS</a>-->
+		</div>
+	</li>
+	<li><a href="#" onmouseover="mopen('m5')" onmouseout="mclosetime()">Services</a>
+		<div id="m5" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+	<!--	<a href="#">E-mail</a>
+		<a href="#">Submit Request Form</a>
+		<a href="#">Call Center</a>-->
+		</div>
+	</li>
+    <li><a href="clients/testimonials.php" onmouseover="mopen('m6')" onmouseout="mclosetime()">Testimonials</a>
+		<div id="m6" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+		<!--<a href="#">E-mail</a>
+		<a href="#">Submit Request Form</a>
+		<a href="#">Call Center</a>-->
+		</div>
+	</li>
+    <li><a href="contact.php" onmouseover="mopen('m7')" onmouseout="mclosetime()">Contact Us</a>
+		<div id="m7" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+	<!--	<a href="#">E-mail</a>
+		<a href="#">Submit Request Form</a>
+		<a href="#">Call Center</a>-->
+		</div>
+	</li>
+</ul>
+</div><!-- end of menu-->
+
+
+<div style="clear:both"></div>
+    
+    <div id="space">
+    
+    </div>
+    
+    <div id="home_content">
+    
+    <div class="top_box">
+	
+    <div id="slideshow">
+    <div class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="images/1.jpg" />
+    </li>
+    <li>
+      <img src="images/12.jpg" />
+    </li>
+     <li>
+      <img src="images/3.jpg" />
+    </li>
+   	<li>
+      <img src="images/4.jpg" />
+    </li>
+    <li>
+      <img src="images/5.jpg" />
+    </li>
+    <li>
+      <img src="images/6.jpg" />
+    </li>
+    <li>
+      <img src="images/7.jpg" />
+    </li>
+    <li>
+      <img src="images/8.jpg" />
+    </li>
+    <li>
+      <img src="images/9.jpg" />
+    </li> 
+    <li>
+      <img src="images/10.jpg" />
+    </li> 
+    <li>
+      <img src="images/11.jpg" />
+    </li> 
+    
+  </ul>
+</div>
+</div> <!--end of slideshow-->
+      
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+</script>
+    
+    </div><!--end of green box-->
+    
+ 
+    
+
+
+<!--<div id="contact">
+
+<h1>Contact</h1>
+
+<div class="contact1">
+<h3>Press & Product Inquires</h3>
+<p>press@sc-pr.net</p>
+<h3>General Inquires</h3>
+<p>pr@sc-pr.net</p>
+</div>
+
+<div class="contact2">
+<h3>Facebook</h3>
+<p>www.facebook.com/helloscpr</p>
+<h3>Twitter</h3>
+<p>twitter.com/sc_pr</p>
+</div>
+
+<div class="contact3">
+<h3>Susan Smith</h3>
+<p>susan@sc-pr.net</p>
+</div>
+</div>
+-->
+ <!--end of home_right-->
+
+
+
+   	  <div id="left_content">
+       		
+            <h1>Featured Clients</h1>
+		                   
+            <div class="client1"> <a target="_blank" href="http://www.cottonbayvillage.com/">
+            <img src="images/client1.jpg" alt="" width="170" height="113" style="padding: 1px;"/></a></div>
+            
+            <div class="client2"> <a target="_blank" href="http://www.aveda.com/index.tmpl">            
+            <img src="images/client2.jpg" alt="" width="170" height="113" style="padding: 1px;"/></a></div>
+           	
+            <div class="client3"> <a target="_blank" href="http://www.kiwekitchen.com/">
+            <img src="images/client3.jpg" alt="" width="170" height="113" style="padding: 1px;"/></a></div>
+            
+            <div class="client4"> <a target="_blank" href="">
+            <img src="images/client4.jpg" alt="" width="170" height="113" style="padding: 1px;"/></a></div>
+            
+            <div class="client5"> <a target="_blank" href="">
+            <img src="images/client5.jpg"alt="" width="170" height="113" style="padding: 1px;"/></a></div> 
+            
+            <div class="client6"> <a target="_blank" href="">
+            <img src="images/client6.jpg" alt="" width="170" height="113" style="padding: 1px;"/></a></div> 
+            
+            <div class="client7"> <a target="_blank" href="">
+            <img src="images/client7.jpg" alt="" width="170" height="113" style="padding: 1px;"/></a></div> 
+            
+            <div class="client8"> <a target="_blank" href="">
+            <img src="images/client8.jpg" alt="" width="170" height="113" style="padding: 1px;"/></a></div> 
+            
+            <div class="client9"> <a target="_blank" href="">
+            <img src="images/client9.jpg" alt="" width="170" height="113" style="padding: 1px;"/></a></div> 
+            
+            <div class="client10"> <a target="_blank" href="">
+            <img src="images/client10.jpg" alt="" width="170" height="113" style="padding: 1px;"/></a></div> 
+            
+            <div class="client11"> <a target="_blank" href="">
+            <img src="images/client11.jpg" alt="" width="170" height="113" style="padding: 1px;"/></a></div> 
+            
+            <div class="client12"> <a target="_blank" href="">
+            <img src="images/client12.jpg" alt="" width="170" height="113" style="padding: 1px;"/></a></div> 
+            
+            <div class="client13"> <a target="_blank" href="">
+            <img src="images/client13.jpg" alt="" width="170" height="113" style="padding: 1px;"/></a></div>
+            
+            <div class="client14"> <a target="_blank" href="">
+            <img src="images/client14.jpg" alt="" width="170" height="113" style="padding: 1px;"/></a></div>
+            
+            <div class="client15"> <a target="_blank" href="">
+            <img src="images/client15.jpg" alt="" width="170" height="113" style="padding: 1px;"/></a></div>
+                
+   	  </div>
+        
+      <div id="left_content2">      
+      <div id="tweets">                   
+            <a class="twitter-timeline" href="https://twitter.com/sc_pr" data-widget-id="322059146331570176">Tweets by @sc_pr</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+            
+            <div id="testimonials">
+           <!-- <img src="images/Untitled-2.jpg" alt="" width="200" height="200"/>-->
+            </div>
+          </div>  
+            
+                 
+      </div><!--end of left content-->
+        
+
+    
+    </div><!--home_container-->
+    
+    
+	
+	
+
+    
+ 
+
+    <div id="footer">
+     	<div class="copyright">        </div>
+    	<div class="footer_links"> 
+        <p style="font-size:9px;">© 2013 SC/PR. All Rights Reserved</p>
+        </div>
+        
+   
+    
+    
+    </div>
+ 
+   
+
+</div> <!--end of main container-->
+
+
+</body></html>

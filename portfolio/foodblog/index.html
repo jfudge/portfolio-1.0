@@ -1,0 +1,284 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Blog</title>
+<link rel="stylesheet" type="text/css" href="css/style-min.css">
+<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+<link rel="stylesheet" type="text/css" href="css/mobile.css">
+<!--SLICK NAV JQUERY-->
+
+<!--FLEXSLIDER-->
+
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+
+</head>
+
+<body>
+<!-- FlexSlider -->
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+		slideshow: "true",
+		slideshowSpeed: 3500, 
+		controlNav: false,
+		animationLoop: true,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+<div id="container">
+
+	<div id="header">
+    <h1>Foodie Bite</h1>    
+    </div>
+    	
+        <nav class="nav-wrapper">
+    	<nav id="nav">
+        <ul>
+        	<li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="baking.html">Baking</a></li>
+            <li><a href="restaurants.html">Restaurants</a></li>          
+        </ul>
+        </nav><!--end of nav-->
+        </nav><!--end of nav-wrapper-->
+            
+        <div class="clear">
+        </div>
+        
+        	<section id="section1">
+            
+            <div class="slider-wrapper">
+            
+            <div class="slider">
+              <div class="flexslider">
+          		<ul class="slides">
+                    <li>
+                    <a href="#"><img src="images/image1.jpg" alt="food" /></a>                    
+                    </li>
+                    <li>
+                    <a href="#"><img src="images/image2.jpg" alt="food" /></a>                    
+                    </li>
+                    <li>
+                    <a href="#"><img src="images/image3.jpg" alt="food" /></a>                    
+                    </li>
+                    <li>
+                    <a href="#"><img src="images/image4.jpg" alt="food" /></a>                    
+                    </li>
+                    <li>
+                    <a href="#"><img src="images/image5.jpg" alt="food" /></a>                    
+                    </li>
+                    <li>
+                    <a href="#"><img src="images/image6.jpg" alt="food" /></a>                    
+                    </li>
+                    <li>
+                    <a href="#"><img src="images/image7.jpg" alt="food" /></a>                    
+                    </li>
+                    <li>
+                    <a href="#"><img src="images/image8.jpg" alt="food" /></a>                    
+                    </li>
+                </ul>
+       		  </div><!--end of flexslider-->
+            
+            </div><!--end of slider-->
+            
+            <div class="box1">
+            </div>
+            
+            <div class="box2">
+            </div>
+            
+            </div><!--end of slider wrapper-->
+            
+            <div class="clear"></div>
+            
+            </section><!--end of section1-->
+            
+            	<section id="section2">
+                
+                
+                <div class="about-wrapper">                
+                
+                <div class="about">
+                <!--<div class="about-img">
+                </div>--><!--end of about-img-->
+                
+                <div class="about-text">
+                <h3>About</h3>
+                <p class="about-text1">About Foodie Bite Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ante nibh, accumsan et libero sit amet, iaculis dictum arcu. Praesent sodales lobortis lorem, ut imperdiet urna. Pellentesque lacus neque, viverra sed felis a, vestibulum imperdiet enim. Quisque laoreet ligula nec suscipit elementum. Donec vehicula nunc id velit porttitor, et ullamcorper sapien imperdiet. Nunc quis massa adipiscing, lacinia turpis porttitor, faucibus ligula. Sed at convallis lacus. Duis sollicitudin justo libero, scelerisque convallis metus bibendum non. Etiam pharetra vitae magna non tempor. Mauris vel nisl at lacus pharetra volutpat. Donec mattis tincidunt ipsum, nec eleifend libero lacinia euismod. Nam dolor elit, volutpat a malesuada vel, tempus et lectus.</p>
+				
+                <p class="about-text1">Etiam tristique erat at metus molestie consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rhoncus quam eu augue gravida, sed pretium diam molestie. Aliquam volutpat orci eget lobortis rutrum. Donec sed scelerisque dui. Praesent placerat, nunc nec tempus aliquam, velit leo dictum justo, at aliquam eros arcu sit amet neque. Curabitur id pretium tortor. Fusce rhoncus malesuada pulvinar. Etiam fringilla massa est, vel consectetur purus tempus ut. Nullam mollis nisl sed consequat viverra. Ut sit amet dolor eget magna cursus molestie ac euismod leo. Fusce sollicitudin, ligula ac auctor volutpat, augue est fringilla erat, sit amet suscipit neque orci quis lectus. Quisque quis nibh erat.</p>
+
+                </div><!--end of about-text-->
+                </div><!--end of about-->
+                
+                </div><!--end of about-wrapper-->
+                
+                <div class="clear"></div>
+                
+                </section>	<!--end of section2-->
+                
+                	<section id="section3">
+                    <h3>Popular Recipes</h3>
+                    	
+                        <div class="recipe-wrapper">
+                    	<div class="breakfast">
+                        <h2>Breakfast</h2>
+                        <img class="recipe-img" src="images/breakfast.png" alt="breakfast"/>
+                        </div>
+                        
+                        <div class="lunch">
+                        <h2>Lunch</h2>
+                        <img class="recipe-img" src="images/lunch.png" alt="lunch"/>
+                        </div>
+                        
+                        <div class="dinner">
+                        <h2>Dinner</h2>
+                        <img class="recipe-img" src="images/dinner.png" alt="dinner"/>
+                        </div>
+                        
+                        <div class="dessert">
+                        <h2>Dessert</h2>
+                        <img class="recipe-img" src="images/dessert.png" alt="dessert"/>
+                        </div>
+                        </div>
+                        
+                        <div class="clear"></div>
+                    
+                    </section><!--end of section3-->
+                    
+                    	<section id="section4">
+                        <div class="page-container">
+                        
+                        <div class="post1">
+                        
+                        <div class="post-img">
+                        </div><!--end of post-img-->
+                                               
+                        <div class="post-text">
+                        <h4>Classic Cherry Pie Recipe</h4>
+                        <p class="date">November 13, 2013</p>
+                        <p>A simple a easy cherry pie recipe. This is a easy to follow recipe made with fresh cherries. Everyone will love this recipe!</p>                        
+                        </div><!--end of post-text-->
+                        
+                        <div class="read-more">
+                        <a href="#"><h5>READ MORE</h5></a>
+                        </div>    
+                                     
+                        </div><!--end of post1-->
+                        
+                        <div class="post2">
+                        
+                        <div class="post-img2">
+                        
+                        </div><!--end of post-img-->
+                        
+                        <div class="post-text">
+                        <h4>Exciting Meatball Recipes</h4>
+                        <p class="date">November 10, 2013</p>
+                        <p>Fun and exciting meatball dishes. These are the perfect meatballs you can enjoy on any occasion. Everyone will love this recipe!</p>
+                        </div><!--end of post-text-->
+                        
+                        <div class="read-more">
+                        <a href="#"><h5>READ MORE</h5></a>
+                        </div>  
+                        
+                        </div><!--end of post2-->
+                        
+                        <div class="post3">
+                        
+                        <div class="post-img3">
+                        
+                        </div><!--end of post-img-->
+                        
+                        <div class="post-text">
+                        <h4>Make an Insanely Good Sandwich for Lunch</h4>
+                        <p class="date">November 9, 2013</p>
+                        <p>Make this quick and delicicous sandwich that will keep you full throughout the day. A glorious sandwich recipe with a kick of heat.</p>
+                        </div><!--end of post-text-->
+                        
+                        <div class="read-more">
+                        <a href="#"><h5>READ MORE</h5></a>
+                        </div>  
+                        
+                        </div><!--end of post3-->
+                        
+                        </div><!--end of page-container-->
+                        
+                        <div class="clear"></div>
+                        
+                        </section><!--end of section4-->
+                        
+                        	<footer id="footer">
+
+                                <section id="section5">
+                        
+                                    <div id="footer-container">
+                                    
+                                        <div class="footer-box1">  
+                                        
+                                        <h4 class="footer">Site Map</h4>
+                                        <ul>
+                                            <li><a href="about.html">News</a></li>
+                                            <li><a href="menu.html">Recipes</a></li>
+                                            <li><a href="specials.html">Baking</a></li>
+                                            <li><a href="gallery.html">Resaurants</a></li>
+                                            <li><a href="#">Contact</a></li>
+                                        </ul>
+                                                                                             
+                                        </div>
+                                        
+                                        <div class="footer-box2">
+                                        
+                                        <h4 class="footer">Contact Info</h4>                             
+                                        
+                                        <ul>
+                                            <li>Email:</li>
+                                            <li><a href="#">foodie@gmail.com</a></li>
+                                            <li>Phone:</li>
+                                            <li class="phone"><a href="#">905-456-1122</a></li>
+                                            <li>33 Hezelnut Crescent</li>
+                                            <li>Toronto, Ontario</li>
+                                            <li>Canada</li>
+                                            <li>OX5 1EH</li>
+                                        </ul>                            
+                                                              
+                                        </div>
+                                        
+                                        <div class="footer-box3">   
+                                        
+                                            <h4 class="footer">Please contact us:</h4>
+                                            <ul>
+                                                <li>Enquire about:</li>
+                                                <li>Catering</li>
+                                                <li>Reviews</li>
+                                                <li>Discounts</li>
+                                                <li>Locations</li>
+                                                <li>Recipes</li>
+                                                <li>Baking</li>
+                                                <li>Resaurants</li>
+                                             </ul>               
+                                         </div> 
+                                         
+                                         </div>   <!--end of footer-container-->                                                  
+                        
+                        </section><!--end of section4-->
+
+                            </footer>
+
+</div>
+
+</body>
+</html>

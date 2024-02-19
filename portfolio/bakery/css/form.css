@@ -1,0 +1,256 @@
+/*desktop*/@media screen and (min-width: 1280px) 
+{
+form
+{
+	width: 610px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+form h1
+{
+	text-align: left;
+	font-size: 120%;	
+	text-shadow: 0 3px 3px rgba(0,0,0,0.25);
+}
+
+form li
+{
+	margin-bottom: 10px;
+}
+
+label
+{
+	display: inline-block;
+	width: 100px;
+	vertical-align: top;
+	
+	text-shadow: 0 3px 3px rgba(0,0,0,0.25);
+}
+
+input[type=text],
+textarea
+{
+	width: 488px;
+	border: none;
+	padding: 4px 8px;
+	background: #f9abb1;
+	color: black;
+	
+	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.25);
+	box-shadow: 0 3px 3px rgba(0,0,0,0.25);	
+	position: relative;
+}
+
+.invalid
+{
+	-webkit-animation-name: shake;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-delay: 0.5s;
+	-webkit-animation-timing-function: ease-in;
+}
+
+input[type=text]:focus,
+textarea:focus
+{
+	outline: none;
+}
+
+input[type=submit]
+{
+	border: none;
+	background: #f9abb1;
+	color: black;
+	padding: 4px 12px;
+	float: right;
+	
+	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.25);
+	box-shadow: 0 3px 3px rgba(0,0,0,0.25);
+}
+
+/* style placeholder text */
+::-webkit-input-placeholder 
+{
+	color: rgba(200,160,40,1);
+}
+
+:-moz-placeholder 
+{ /* Firefox 18- */
+	color: rgba(200,160,40,1);
+}
+
+::-moz-placeholder 
+{  /* Firefox 19+ */
+	color: rgba(200,160,40,1);
+}
+
+:-ms-input-placeholder 
+{  
+	color: rgba(200,160,40,1);
+}
+
+/* shake keyframe animation */
+
+@-webkit-keyframes shake {
+  0% { 
+		left: 0px; 
+  }
+  12.5% { 
+		left: -5px;
+  }
+  25% { 
+		left: 0px;		
+  }
+  37.5% { 
+		left: 5px;		
+  }
+  50% { 
+		left: 0px; 
+  }
+  62.5% { 
+		left: -5px;
+  }
+  75% { 
+		left: 0px;		
+  }
+  87.5% { 
+		left: 5px;		
+  }
+  100% { 
+		left: 0px;
+  }
+}
+
+}
+
+/*mobile*/@media screen and (max-width: 978px)
+{
+	form
+	{
+		width: 310px;
+		margin: 0 auto;
+		padding: 20px;
+		margin-bottom: 20px;
+	}
+	
+	form h1
+	{
+		text-align: left;
+		font-size: 18px;	
+		text-shadow: 0 3px 3px rgba(0,0,0,0.25);
+		padding: 30px;
+	}
+
+form li
+{
+	margin-bottom: 10px;
+}
+
+label
+{
+	display: inline-block;
+	width: 100px;
+	vertical-align: top;
+	
+	text-shadow: 0 3px 3px rgba(0,0,0,0.25);
+}
+
+input[type=text],
+textarea
+{
+	width: 300px;
+	border: none;
+	padding: 4px 8px;
+	background: #f9abb1;
+	color: black;
+	
+	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.25);
+	box-shadow: 0 3px 3px rgba(0,0,0,0.25);	
+	position: relative;
+}
+
+#message
+{
+	height: 50px;	
+	margin: 0 auto;
+}
+
+.invalid
+{
+	-webkit-animation-name: shake;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-delay: 0.5s;
+	-webkit-animation-timing-function: ease-in;
+}
+
+input[type=text]:focus,
+textarea:focus
+{
+	outline: none;
+}
+
+input[type=submit]
+{
+	border: none;
+	background: #f9abb1;
+	color: black;
+	padding: 4px 12px;
+	float: right;
+	
+	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.25);
+	box-shadow: 0 3px 3px rgba(0,0,0,0.25);
+}
+
+/* style placeholder text */
+::-webkit-input-placeholder 
+{
+	color: rgba(200,160,40,1);
+}
+
+:-moz-placeholder 
+{ /* Firefox 18- */
+	color: rgba(200,160,40,1);
+}
+
+::-moz-placeholder 
+{  /* Firefox 19+ */
+	color: rgba(200,160,40,1);
+}
+
+:-ms-input-placeholder 
+{  
+	color: rgba(200,160,40,1);
+}
+
+/* shake keyframe animation */
+
+@-webkit-keyframes shake {
+  0% { 
+		left: 0px; 
+  }
+  12.5% { 
+		left: -5px;
+  }
+  25% { 
+		left: 0px;		
+  }
+  37.5% { 
+		left: 5px;		
+  }
+  50% { 
+		left: 0px; 
+  }
+  62.5% { 
+		left: -5px;
+  }
+  75% { 
+		left: 0px;		
+  }
+  87.5% { 
+		left: 5px;		
+  }
+  100% { 
+		left: 0px;
+  }
+}
+}

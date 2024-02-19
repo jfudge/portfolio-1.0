@@ -1,0 +1,246 @@
+@import url(reset.css);
+
+
+@font-face {
+    font-family: 'brownielight';
+    src: url('../fonts/brownielight-webfont.eot');
+    src: url('../fonts/brownielight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/brownielight-webfont.woff2') format('woff2'),
+         url('../fonts/brownielight-webfont.woff') format('woff'),
+         url('../fonts/brownielight-webfont.ttf') format('truetype'),
+         url('../fonts/brownielight-webfont.svg#brownielightlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'brownieregular';
+    src: url('../fonts/brownieregular-webfont.eot');
+    src: url('../fonts/brownieregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/brownieregular-webfont.woff2') format('woff2'),
+         url('../fonts/brownieregular-webfont.woff') format('woff'),
+         url('../fonts/brownieregular-webfont.ttf') format('truetype'),
+         url('../fonts/brownieregular-webfont.svg#brownieregularbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gist_upright_extrabold_demo';
+    src: url('../fonts/gistuprightextrabolddemo-webfont.eot');
+    src: url('../fonts/gistuprightextrabolddemo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gistuprightextrabolddemo-webfont.woff2') format('woff2'),
+         url('../fonts/gistuprightextrabolddemo-webfont.woff') format('woff'),
+         url('../fonts/gistuprightextrabolddemo-webfont.ttf') format('truetype'),
+         url('../fonts/gistuprightextrabolddemo-webfont.svg#gist_upright_extrabold_demoRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:100,200,300);
+
+body{
+	font-family: 'Raleway', sans-serif;
+	font-size: 13pt;
+	background: #3C2D27;
+	color: #fde6a5;
+	font-weight: 200;
+}
+
+h1,h2,h3{
+	
+	margin-bottom: 20px;
+	
+	/*text-shadow: 0px 1px 1px #000000;
+    filter: dropshadow(color=#000000, offx=0, offy=1);*/
+}
+
+p{ margin-bottom: 20px; }
+
+h1{ font-family: 'gist_upright_extrabold_demo'; font-weight: normal; font-style: normal;  -webkit-font-smoothing: antialiased; text-transform: uppercase; }
+h2{ font-family: 'brownieregular'; font-weight: normal; font-style: normal; text-transform: capitalize; }
+h3{ font-family: 'brownielight'; font-size: 75%; }
+
+/* tablet and small screen PC layout */
+
+img{
+	max-width: 50%;
+	float: left;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+
+img.large{
+	max-width: 100%;
+}
+
+#wrapper{
+	width: 978px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+header.main{
+	width: 306px;
+	float: left;
+	position: fixed;
+}
+
+	/* site heading link */
+	header.main h1 a{
+		display: block;
+		background: #ff7055;
+		color: #80d8c2;
+		text-decoration: none;
+		text-align: center;
+		line-height: 1.2;
+		padding: 10px 0;		
+		text-shadow: 0px 1px 1px #000000;
+       	filter: dropshadow(color=#000000, offx=0, offy=1);
+		font-size: 52px;
+		word-wrap: break-word;
+	}
+
+
+	header.main nav{
+		margin-bottom: 20px;
+	}
+
+		header.main nav ul{
+		
+		}	
+
+			header.main nav li{
+			
+			}
+
+				header.main nav a{
+					font-family: 'Bebas Neue Regular';
+					color: #33ddff;
+					text-decoration: none;
+					font-size: 200%;
+					text-align: center;
+					display: block;
+					padding: 10px 0;
+					border-bottom: solid #DCCC97 3px;
+					
+					text-shadow: 0px 1px 1px #000000;
+       				filter: dropshadow(color=#000000, offx=0, offy=1);
+				}
+				
+				header.main nav li:last-child a{
+					border-bottom: none;
+				}
+
+section.main-content{
+	width: 642px;
+	float: right;
+}
+
+aside.pro-tips{
+	clear: both;
+}
+
+/* smartphone (narrow screen) layout */
+@media screen and (max-width: 978px){
+	body{
+		font-size: 14pt;
+	}
+	
+	#wrapper{
+		width: auto;
+		margin: 0 20px;
+	}
+	
+	header.main{
+		width: auto;
+		float: none;
+		position: static;
+	}
+	
+	header.main h1 a{
+		font-size: 100%;
+
+	}
+	
+	section.main-content{
+		width: auto;
+		float: none;
+	}
+}
+
+/* widescreen layout */
+@media screen and (min-width: 1280px){
+	#wrapper{
+		width: auto;
+		margin: 20px 20px;
+	}
+	
+		header.main{
+			width: 100%;
+			float: left;
+			background: #ff7055;
+			position: static;
+			height: 140px;
+		}
+		
+		header.main h1 a{
+			text-align: left;
+			float: left;
+			padding-top: 5px;
+			margin: 0;
+			margin-left: 20px;
+			line-height: 60px;
+			background-position: top center;
+		}
+		
+		header.main h1{
+			margin: 0;
+			display: block;
+		}
+		
+		header.main nav{
+			float: right;
+		}
+		
+			header.main nav li{
+				float: left;
+				display: block;
+				margin-right: 20px;
+				margin-top: 0px;
+			}
+			
+				header.main nav a{
+					padding: 0 0 0 0;
+					margin: 0;
+					border: none;
+					line-height: 60px;
+				}
+				
+	section.main-content{
+		width: auto;
+		float: none;
+		clear: both;
+		padding-top: 20px;
+		
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		-o-column-count: 3;
+		-ms-column-count: 3;
+		column-count: 3;
+		-webkit-column-gap: 30px;
+		-moz-column-gap: 30px;
+		-o-column-gap: 30px;
+		-ms-column-gap: 30px;
+		column-gap: 30px;
+	}
+	
+	h1,h2,h3{
+		
+	}
+}
+
+
+

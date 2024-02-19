@@ -1,0 +1,14 @@
+@media (min-width:1500px){
+	#masonry-grid .gutter-sizer{width:4%;}
+	#masonry-grid .grid-item{width:22%;margin-bottom:4%;}
+}
+
+@media (max-width:1200px){
+	#masonry-grid .gutter-sizer{width:4%;}
+	#masonry-grid .grid-item{width:48%;}
+}
+
+@media (max-width:768px){
+	#masonry-grid .gutter-sizer{width:0%;}
+	#masonry-grid .grid-item{width:100%;}
+}
